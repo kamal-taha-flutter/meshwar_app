@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+import 'package:hungryapp/features/auth/presentation/views/login_view.dart';
+import 'package:hungryapp/features/auth/presentation/views/signup_view.dart';
+import 'package:hungryapp/features/home/views/home_view.dart';
+import 'package:hungryapp/features/onboard.dart';
+import 'package:hungryapp/features/product/presentation/views/product_details.dart';
+import 'package:hungryapp/root.dart';
+import 'package:hungryapp/splash_view.dart';
+
+void main() {
+  runApp(const WearMeApp());
+}
+
+class WearMeApp extends StatelessWidget {
+  const WearMeApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashView(),
+      initialRoute: '/splash',
+      routes: {
+        'splash_view': (context) => SplashView(),
+        'login_view': (context) => LoginView(),
+        'signup_view': (context) => SignupView(),
+        HomeView.screenRoute: (context) => HomeView(),
+        Root.screenRoute: (context) => Root(),
+        ProductDetails.screenRoute : (context) => ProductDetails(),
+        Onboard.screenRoute: (context) => Onboard(),
+
+
+      },
+    );
+  }
+}
