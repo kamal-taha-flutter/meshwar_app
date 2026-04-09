@@ -30,7 +30,7 @@ class FavouriteCard extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               SizedBox(height: 5),
-              //love
+
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8),
                 child: Row(
@@ -110,3 +110,5 @@ class FavouriteCard extends StatelessWidget {
     );
   }
 }
+
+

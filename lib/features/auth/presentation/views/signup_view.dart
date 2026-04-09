@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:hungryapp/core/constants/app_colors.dart';
 import 'package:hungryapp/core/shared/custom_auth_button.dart';
-//import 'package:hungryapp/core/constants/app_colors.dart';
+
 import 'package:hungryapp/core/shared/custom_text.dart';
 import 'package:hungryapp/core/shared/custom_text_field.dart';
 import 'package:hungryapp/root.dart';
@@ -30,7 +30,7 @@ final GlobalKey<FormState> formKey = GlobalKey<FormState>();
                 SizedBox(height:5),
                 CustomText(text: 'Fill your Details or continue with', weight:FontWeight.normal, size: 20, color: Color(0xff707B81)),
                 CustomText(text: 'social media', weight:FontWeight.normal, size: 20, color: Color(0xff707B81)),
-                //text field
+
                 Spacer(),
                 CustomTextField(fieldName: 'Your Name', isPassword: false , controller: nameController),
                 SizedBox(
@@ -88,3 +88,5 @@ final GlobalKey<FormState> formKey = GlobalKey<FormState>();
       ));
   }
 }
+
+

@@ -26,7 +26,7 @@ final String? iconImage;
                                 children: [
                                   if (iconImage != null) ...[
                                     Image.asset(iconImage!, height: 24),
-                                  const SizedBox(width: 8), // مسافة بسيطة بين الصورة والنص
+                                  const SizedBox(width: 8),
                                 ],
                                 CustomText(
                                   text: text,
@@ -45,3 +45,4 @@ final String? iconImage;
                   )  );
   }
 }
+

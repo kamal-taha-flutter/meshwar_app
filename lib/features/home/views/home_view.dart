@@ -8,21 +8,21 @@ import 'package:hungryapp/features/home/widgets/search_space.dart';
 import 'package:hungryapp/features/home/widgets/seeall_header.dart';
 import 'package:hungryapp/features/home/widgets/shoose_category.dart';
 
-// ignore: must_be_immutable
+
 class HomeView extends StatefulWidget {
-   HomeView({super.key});
- static const String screenRoute = 'home_view';
-  List category = ['All Shoes', 'Outdoor', 'Tennis', 'Running','Tennis','Running'];
- int selectedCategory = 0;
+  HomeView({super.key});
+  static const String screenRoute = 'home_view';
   @override
   State<HomeView> createState() => _HomeViewState();
 }
 
-//New Arrivals
+
 bool seeAllPopular = false;
 bool seeAllNew = false;
 
 class _HomeViewState extends State<HomeView> {
+  final List category = ['All Shoes', 'Outdoor', 'Tennis', 'Running','Tennis','Running'];
+  int selectedCategory = 0;
  
   @override
   Widget build(BuildContext context) {
@@ -55,7 +55,7 @@ class _HomeViewState extends State<HomeView> {
                         ],
                       ),
                       SizedBox(height: 10),
-                      ShooseCategory(category: widget.category, selectedCategory: widget.selectedCategory,),
+                      ShooseCategory(category: category, selectedCategory: selectedCategory,),
                       SizedBox(height: 10),
                   
                       SeeallHeader(
@@ -139,3 +139,5 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 }
+
+

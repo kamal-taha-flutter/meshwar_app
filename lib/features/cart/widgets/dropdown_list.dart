@@ -9,13 +9,13 @@ class DropdownList extends StatefulWidget {
 }
 
 class _DropdownListState extends State<DropdownList> {
-  // قائمة بالبطاقات (Model)
+
   final List<CardModel> cards = [
     CardModel(name: "DbL Card", number: "**** 0696 4629", imagePath: "assets/home/dollar Background Removed 1.png"),
     CardModel(name: "Visa Card", number: "**** 7421 1234", imagePath: "assets/home/visa.png"),
   ];
 
-  // ده المتغير اللي بيخزن البطاقة اللي المستخدم اختارها
+
   CardModel? selectedCard;
 
   @override
@@ -50,7 +50,7 @@ class _DropdownListState extends State<DropdownList> {
     items: cards.map((card) {
       return DropdownMenuItem<CardModel>(
         value: card,
-        child: _buildCardItem(card), // التصميم بتاعك
+        child: _buildCardItem(card),
       );
     }).toList(),
 
@@ -63,14 +63,14 @@ class _DropdownListState extends State<DropdownList> {
     dropdownStyleData: DropdownStyleData(
       padding: EdgeInsets.zero,
       width: MediaQuery.of(context).size.width * 1, 
-      maxHeight: 250, // ارتفاع القائمة المفتوحة
+      maxHeight: 250,
       decoration: BoxDecoration(
         color: Colors.white,
       ),
     ),
 
     menuItemStyleData: MenuItemStyleData(
-      height: 90, // 👈 ارتفاع كل عنصر جوه القائمة
+      height: 90,
       customHeights: List.generate(cards.length, (index) => 90),
     ),
   ),
@@ -79,12 +79,12 @@ class _DropdownListState extends State<DropdownList> {
     );
   }
 
-  // 📌 دي الـ widget اللي بتعمل شكل البيانات زي التصميم اللي بعتّه
+
   Widget _buildCardItem(CardModel card) {
     return Container(
       
       decoration: BoxDecoration(
-       // إضافة Shadows
+
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
@@ -97,24 +97,24 @@ class _DropdownListState extends State<DropdownList> {
       ),
 
       child: ListTile(
-        // عند الضغط يتم اختيار البطاقة
+
         onTap: () => setState(() => selectedCard = card),
 
         contentPadding: EdgeInsets.symmetric(horizontal: 18, vertical: 15),
-          // ✔ حتى لو مفيش leading يفضل في مسافة
+
         minLeadingWidth: 50,
 
-        // ✔ ارتفاع مناسب للعنصر
+
         minVerticalPadding: 15,
 
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
 
-        // صورة البطاقة
+
         leading: Image.asset(card.imagePath, width: 50),
 
-        // اسم البطاقة
+
         title: Column(
           children: [
             Text(
@@ -128,7 +128,7 @@ class _DropdownListState extends State<DropdownList> {
           ],
         ),
 
-        // خلفية العنصر
+
         tileColor: Colors.white,
 
       ),
@@ -136,7 +136,7 @@ class _DropdownListState extends State<DropdownList> {
   }
 }
 
-// Model Class - لتجميع بيانات البطاقة
+
 class CardModel {
   final String name;
   final String number;
@@ -148,3 +148,5 @@ class CardModel {
     required this.imagePath,
   });
 }
+
+

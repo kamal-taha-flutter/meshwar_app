@@ -39,7 +39,7 @@ class _CartItemState extends State<NotificationItem> {
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Center(
-                //rotate
+
                 child: Transform.rotate(
                   angle: -.4,
                   child: Image.asset(widget.image),
@@ -89,3 +89,5 @@ class _CartItemState extends State<NotificationItem> {
       );
   }
 }
+
+

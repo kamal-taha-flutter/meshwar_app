@@ -41,7 +41,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                         if( v == null || v.isEmpty ){
                           return 'Please fill ${widget.fieldName}';
                         }
-                        null;
+                        return null;
                       },
                       obscureText: obscureText,
                       
@@ -66,7 +66,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                 borderSide: BorderSide(color: AppColors.grey),
                 borderRadius: BorderRadius.circular(8),
               ),
-              // focusColor: Colors.grey,
+
               fillColor: AppColors.grey,
               filled: true,
             ),
@@ -76,3 +76,4 @@ class _CustomTextFieldState extends State<CustomTextField> {
               );
   }
 }
+

@@ -3,8 +3,8 @@ import 'package:hungryapp/core/constants/app_colors.dart';
 import 'package:hungryapp/core/shared/custom_text.dart';
 import 'package:hungryapp/features/home/widgets/love_button.dart';
 import 'package:hungryapp/features/product/presentation/views/product_details.dart';
-//import 'package:hungryapp/features/home/widgets/love_button.dart';
-//import 'package:hungryapp/features/product/presentation/widgets/loves_button.dart';
+
+
 
 class CardItem extends StatelessWidget {
   const CardItem({super.key, required this.itemName, required this.itemPrice, required this.itemImage});
@@ -32,7 +32,7 @@ class CardItem extends StatelessWidget {
                             SizedBox(
                               height: 5,
                             ),
-                            //love
+
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 8),
                               child: Row(
@@ -113,3 +113,4 @@ class CardItem extends StatelessWidget {
     );
   }
 }
+

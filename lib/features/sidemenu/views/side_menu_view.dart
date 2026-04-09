@@ -59,7 +59,7 @@ class SideMenuView extends StatelessWidget {
                     text: 'Kamal  Taha',
                     size: 20,
                     weight: FontWeight.bold,
-                    color: Colors.white, // يفضل عشان تكون ظاهرة على الخلفية
+                    color: Colors.white,
                   ),
                   Gap(40),
                   SideItem(text: 'Profile', icon: CupertinoIcons.person,
@@ -103,3 +103,5 @@ class SideMenuView extends StatelessWidget {
     );
   }
 }
+
+

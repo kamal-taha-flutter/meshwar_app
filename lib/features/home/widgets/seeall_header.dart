@@ -14,7 +14,7 @@ final bool isSeeall;
                         child: Row(
                           children: [
                             CustomText(
-                              text: Text,//'Popular Shoes',
+                              text: Text,
                               color: Colors.black,
                               weight: FontWeight.w800,
                               size: 16,
@@ -41,3 +41,4 @@ final bool isSeeall;
                       );
   }
 }
+

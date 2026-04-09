@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hungryapp/core/constants/app_colors.dart';
 import 'package:hungryapp/core/shared/custom_text.dart';
 
+
 // ignore: must_be_immutable
 class ShooseCategory extends StatefulWidget {
    ShooseCategory({super.key, required this.category, required this.selectedCategory});
@@ -46,3 +47,5 @@ class _ShooseCategoryState extends State<ShooseCategory> {
     );
   }
 }
+
+

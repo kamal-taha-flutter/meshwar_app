@@ -3,7 +3,7 @@ import 'package:gap/gap.dart';
 import 'package:hungryapp/core/constants/app_colors.dart';
 import 'package:hungryapp/features/favourite/widgets/favourite_card_widget.dart';
 import 'package:hungryapp/features/favourite/widgets/favourite_header.dart';
-//import 'package:hungryapp/core/shared/custom_text.dart';
+
 
 class FavouriteView extends StatelessWidget {
   const FavouriteView({super.key});
@@ -58,3 +58,4 @@ class FavouriteView extends StatelessWidget {
     );
   }
 }
+

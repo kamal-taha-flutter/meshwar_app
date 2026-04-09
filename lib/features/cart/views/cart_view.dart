@@ -32,7 +32,7 @@ List<ProductModel> products = [
   ),
 ];
 
-// قائمة بأسماء البطاقات
+
 final List<String> cards = [
   "DbL Card",
   "Visa Card",
@@ -102,7 +102,7 @@ final List<String> cards = [
                       
                           CustomText(text: 'Contact Information',size: 16,weight: FontWeight.bold,),
                           Gap(20),
-                          ///Email
+
                         Row(
                           children: [
                             
@@ -127,7 +127,7 @@ final List<String> cards = [
                           ],
                         ),
                         Gap(20),
-                         ///phone
+
                         Row(
                           children: [
                             
@@ -153,7 +153,7 @@ final List<String> cards = [
                         ),
                         Gap(20),
                           CustomText(text: 'Payment Method',size: 16,weight: FontWeight.bold,),
-                        ///dropdownList
+
                         DropdownList()
 
 
@@ -181,7 +181,7 @@ final List<String> cards = [
             BoxShadow(
               color: Colors.black.withOpacity(0.25),
               blurRadius: 8,
-              offset: Offset(0, 4), // shadow لتحت
+              offset: Offset(0, 4),
             ),
           ],
         ),
@@ -302,3 +302,5 @@ class ProductModel {
     required this.price,
   });
 }
+
+

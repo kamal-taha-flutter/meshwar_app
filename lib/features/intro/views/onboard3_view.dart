@@ -1,9 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-//import 'package:flutter_svg/flutter_svg.dart';
+
 import 'package:hungryapp/core/constants/app_colors.dart';
-//import 'package:hungryapp/features/intro/widgets/custom_button_onboard.dart';
+
 
 class Onboard3View extends StatelessWidget {
   const Onboard3View({super.key});
@@ -43,3 +43,4 @@ class Onboard3View extends StatelessWidget {
       );
   }
 }
+

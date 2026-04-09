@@ -23,7 +23,7 @@ class _CartItemState extends State<CartItem> {
       startActionPane: ActionPane(
         motion: const DrawerMotion(),
         children: [
-          ///زيادة ونقصان
+
           CustomSlidableAction(
             onPressed: (context) {},
             borderRadius: BorderRadius.circular(16),
@@ -87,7 +87,7 @@ class _CartItemState extends State<CartItem> {
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Center(
-                //rotate
+
                 child: Transform.rotate(
                   angle: -.4,
                   child: Image.asset(widget.image),
@@ -114,3 +114,5 @@ class _CartItemState extends State<CartItem> {
     );
   }
 }
+
+

@@ -20,10 +20,11 @@ final Function() ontap;
                                     text: text,
                                     size: 18,
                                     weight: FontWeight.w600,
-                                    color: Colors.white, // يفضل عشان تكون ظاهرة على الخلفية
+                                    color: Colors.white,
                                   ),
                   ),  
                 ],
               );
   }
 }
+

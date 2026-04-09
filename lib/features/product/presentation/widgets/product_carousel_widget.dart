@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hungryapp/core/constants/app_colors.dart';
 
-// استخدام الـ Widget:
-// ProductCarouselWidget(
-//   height: 600, // اختياري - default 600
-// )
+
+
+
+
 
 class ProductCarouselWidget extends StatefulWidget {
   final double height;
@@ -32,35 +32,35 @@ class _ProductCarouselWidgetState extends State<ProductCarouselWidget>
       name: 'Nike Metcon 9',
       color: 'Peach/Coral',
       price: '\$130',
-      //gradientColors: [Color(0xFFFFD6C9), Color(0xFFFFB4A0)],
+
       imageUrl: 'assets/product/shoes3.png',
     ),
     ProductModel(
       name: 'Nike Air Zoom',
       color: 'Red/White',
       price: '\$150',
-      //gradientColors: [Color(0xFFFFCDD2), Color(0xFFEF9A9A)],
+
       imageUrl: 'assets/home/choose1.png',
     ),
     ProductModel(
       name: 'Nike React',
       color: 'Light Blue',
       price: '\$140',
-      //gradientColors: [Color(0xFFB3E5FC), Color(0xFF81D4FA)],
+
       imageUrl: 'assets/product/shoes3.png',
     ),
     ProductModel(
       name: 'Nike Pegasus',
       color: 'Royal Blue',
       price: '\$160',
-      //gradientColors: [Color(0xFF90CAF9), Color(0xFF5E92F3)],
+
       imageUrl: 'assets/home/choose1.png',
     ),
     ProductModel(
       name: 'Nike Revolution',
       color: 'Black/Gray',
       price: '\$120',
-      //gradientColors: [Color(0xFFCFD8DC), Color(0xFF90A4AE)],
+
       imageUrl: 'assets/product/shoes3.png',
     ),
   ];
@@ -126,17 +126,17 @@ class _ProductCarouselWidgetState extends State<ProductCarouselWidget>
       height: MediaQuery.of(context).size.height * 0.35,
       child: Stack(
         children: [
-          // Main Display
+
            Positioned(
             child: _buildMainDisplay()),
-          // Thumbnails
+
           Positioned(
             top: 220,
             child: _buildThumbnails()),
-          //SizedBox(height: 15),
-          // Page Indicators
-        //  _buildPageIndicators(),
-          //SizedBox(height: 20),
+
+
+
+
         ],
       ),
     );
@@ -150,14 +150,14 @@ class _ProductCarouselWidgetState extends State<ProductCarouselWidget>
         children: [
         
       
-          // White card background
+
           Transform.rotate(
             angle: -.2,
             child: Container(
               margin: EdgeInsets.symmetric(horizontal: 20),
               constraints: BoxConstraints(maxWidth: 500),
               decoration: BoxDecoration(
-               // color: Colors.white,
+
                
                 borderRadius: BorderRadius.circular(25),
                
@@ -198,7 +198,7 @@ class _ProductCarouselWidgetState extends State<ProductCarouselWidget>
                   ),
           ), 
       
-                       //stage
+
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Container(
@@ -208,7 +208,7 @@ class _ProductCarouselWidgetState extends State<ProductCarouselWidget>
                   ),
                 ),              
                
-          // Navigation buttons
+
           Positioned(
             left: 175,
             bottom: 110,
@@ -294,12 +294,12 @@ class _ProductCarouselWidgetState extends State<ProductCarouselWidget>
                     children: [
                       Container(
                         decoration: BoxDecoration(
-                          // gradient: LinearGradient(
-                          //   colors: [
-                          //     products[index].gradientColors[0].withOpacity(0.3),
-                          //     products[index].gradientColors[1].withOpacity(0.3),
-                          //   ],
-                          // ),
+
+
+
+
+
+
                         ),
                       ),
                       Center(
@@ -327,41 +327,42 @@ class _ProductCarouselWidgetState extends State<ProductCarouselWidget>
     );
   }
 
-//   Widget _buildPageIndicators() {
-//     return Row(
-//       mainAxisAlignment: MainAxisAlignment.center,
-//       children: List.generate(products.length, (index) {
-//         bool isSelected = index == currentIndex;
-//         return GestureDetector(
-//           onTap: () => _changePage(index),
-//           child: AnimatedContainer(
-//             duration: Duration(milliseconds: 300),
-//             margin: EdgeInsets.symmetric(horizontal: 3),
-//             width: isSelected ? 28 : 7,
-//             height: 7,
-//             decoration: BoxDecoration(
-//               borderRadius: BorderRadius.circular(4),
-//               color: isSelected ? Color(0xFF3B82F6) : Colors.grey.shade300,
-//             ),
-//           ),
-//         );
-//       }),
-//     );
-//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  }
 
 class ProductModel {
   final String name;
   final String color;
   final String price;
-  //final List<Color> gradientColors;
+
   final String imageUrl;
 
   ProductModel({
     required this.name,
     required this.color,
     required this.price,
-   // required this.gradientColors,
+
     required this.imageUrl,
   });
 }
+

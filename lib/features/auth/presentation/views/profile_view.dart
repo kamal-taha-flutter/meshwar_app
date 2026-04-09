@@ -7,7 +7,7 @@ import 'package:hungryapp/core/shared/custom_text.dart';
 import 'package:hungryapp/features/auth/presentation/widgets/profile_field.dart';
 import 'package:hungryapp/features/auth/presentation/widgets/profile_header.dart';
 
-// ignore: must_be_immutable
+
 class ProfileView extends StatefulWidget {
    ProfileView({super.key});
 
@@ -34,7 +34,7 @@ TextEditingController _Address =TextEditingController();
     _Email.text = 'kamaltaha298@gmail.com';
     _Address.text = 'Nefia-Tanta-Elgarbia';
 
-    // TODO: implement initState
+
     super.initState();
   }
   @override
@@ -60,9 +60,9 @@ TextEditingController _Address =TextEditingController();
                       backgroundColor: AppColors.primary,
                       radius: 67,
                       child: CircleAvatar(
-                          radius: 65, // حجم الدائرة
-                          backgroundImage: AssetImage('assets/home/profile.jpg'), // الصورة كخلفية
-                          backgroundColor: Colors.transparent, // (اختياري) جعل الخلفية شفافة في حالة وجود أجزاء شفافة في الصورة
+                          radius: 65,
+                          backgroundImage: AssetImage('assets/home/profile.jpg'),
+                          backgroundColor: Colors.transparent,
                         ),
                     ),
                       Gap(5),
@@ -113,3 +113,5 @@ TextEditingController _Address =TextEditingController();
     );
   }
 }
+
+

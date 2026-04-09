@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hungryapp/core/constants/app_colors.dart';
 import 'package:hungryapp/core/shared/custom_auth_button.dart';
 import 'package:hungryapp/core/shared/custom_text.dart';
-//
-//import 'package:hungryapp/features/home/widgets/love_button.dart';
+
+
 import 'package:hungryapp/features/product/presentation/widgets/loves_button.dart';
 import 'package:hungryapp/features/product/presentation/widgets/product_carousel_widget.dart';
 import 'package:hungryapp/features/product/presentation/widgets/product_header.dart';
@@ -74,7 +74,7 @@ final String text = 'The Nike Air Max 270 delivers visible Air under every step.
                 });
               }, isReadMore: readMore),
         
-              //buttons
+
               SizedBox(height: 40,),
               Padding(
                 padding: const EdgeInsets.only(bottom: 40),
@@ -110,3 +110,4 @@ final String text = 'The Nike Air Max 270 delivers visible Air under every step.
       );
   }
 }
+

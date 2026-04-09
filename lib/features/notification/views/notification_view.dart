@@ -5,12 +5,12 @@ import 'package:hungryapp/core/shared/custom_text.dart';
 import 'package:hungryapp/features/notification/widgets/notification_header.dart';
 import 'package:hungryapp/features/notification/widgets/notification_item.dart';
 
-// ignore: must_be_immutable
+
 class NotificationView extends StatelessWidget {
    NotificationView({super.key});
   final String selectedCard = "DbL Card";
 
-List<ProductModel> products = [
+final List<ProductModel> products = [
   ProductModel(
     image: 'assets/home/choose1.png',
     title: 'Nike Air Max 200',
@@ -55,7 +55,7 @@ List<ProductModel> products = [
   ),
 ];
 
-// قائمة بأسماء البطاقات
+
 final List<String> cards = [
   "DbL Card",
   "Visa Card",
@@ -78,7 +78,7 @@ final List<String> cards = [
                   child: Column(
                     children: [
                       Gap(30),
-                    //Notification header
+
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10),
                       child: NotificationHeader(),
@@ -143,3 +143,5 @@ class ProductModel {
     required this.time,
   });
 }
+
+

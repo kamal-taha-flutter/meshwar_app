@@ -11,7 +11,7 @@ class ProductHeader extends StatelessWidget {
       padding: const EdgeInsets.all(15),
       child: Row(
                        children: [
-                        //arrow_back
+
                           GestureDetector(
                             onTap: () => Navigator.pop(context),
                             child: CircleAvatar(
@@ -40,3 +40,4 @@ class ProductHeader extends StatelessWidget {
     );
   }
 }
+
