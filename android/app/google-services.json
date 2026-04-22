@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "960168846553",
+    "project_id": "meshwarapp-fb815",
+    "storage_bucket": "meshwarapp-fb815.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960168846553:android:63fa5773603ff112880ac8",
+        "android_client_info": {
+          "package_name": "com.example.hungryapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960168846553-s5t6vapk4g8sioqa1npt5eg0ugm0lgus.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hungryapp",
+            "certificate_hash": "0338edd4ef3cd95eac0d9f5c93291687d37962ad"
+          }
+        },
+        {
+          "client_id": "960168846553-706rh7tjmgs1fttnluj0hiklkllkpqdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi17LN1TPL81j8Dc2go6JKNTpUtWA58ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960168846553-706rh7tjmgs1fttnluj0hiklkllkpqdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

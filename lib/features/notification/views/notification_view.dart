@@ -19,7 +19,7 @@ final List<ProductModel> products = [
     time: '7 min ago',
   ),
   ProductModel(
-    image: 'assets/product/shoes2.png',
+    image: 'assets/product/Shoes2.png',
     title: 'Nike Air Max 720',
     price: '\$120.00',
     afterPrice: '\$90.00', 
@@ -40,7 +40,7 @@ final List<ProductModel> products = [
     time: '7 min ago',
   ),
   ProductModel(
-    image: 'assets/product/shoes2.png',
+    image: 'assets/product/Shoes2.png',
     title: 'Nike Air Max 720',
     price: '\$120.00',
     afterPrice: '\$90.00', 

@@ -30,7 +30,8 @@ final String text = 'The Nike Air Max 270 delivers visible Air under every step.
         child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              ProductHeader(),
+              SizedBox(height: 5,),
+              ProductHeader(ontap: () { Navigator.pop(context); },),
               SizedBox(
                 height: 20,
               ),

@@ -86,7 +86,7 @@ class _HomeViewState extends State<HomeView> {
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     mainAxisSpacing: 10,
-                    childAspectRatio: .785,
+                    childAspectRatio: .782,
                   ),
                 ),
               ),
@@ -125,7 +125,7 @@ class _HomeViewState extends State<HomeView> {
                             borderRadius: BorderRadius.circular(16),
                             color: Colors.white,
                           ),
-                          child: Image.asset('assets/home/OfferItem.png'),
+                          child: Image.asset('assets/home/offerItem.png',fit: BoxFit.contain,),
                         ),
                       );
                     },

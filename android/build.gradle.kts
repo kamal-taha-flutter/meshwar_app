@@ -1,3 +1,15 @@
+// 1. ضفنا سطر الـ buildscript ده عشان نعرف المشروع بـ Firebase
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // ده السطر اللي بيشغل خدمات جوجل في المشروع كله
+        classpath("com.google.gms:google-services:4.4.1")
+    }
+}
+
 allprojects {
     repositories {
         google()

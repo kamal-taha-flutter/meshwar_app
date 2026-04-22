@@ -21,7 +21,7 @@ List<ProductModel> products = [
     price: '\$94.05',
   ),
   ProductModel(
-    image: 'assets/product/shoes2.png',
+    image: 'assets/product/Shoes2.png',
     title: 'Nike Air Max 720',
     price: '\$120.00',
   ),

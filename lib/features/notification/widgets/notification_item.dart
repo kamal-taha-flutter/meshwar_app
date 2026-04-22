@@ -42,7 +42,7 @@ class _CartItemState extends State<NotificationItem> {
 
                 child: Transform.rotate(
                   angle: -.4,
-                  child: Image.asset(widget.image),
+                  child: Image.asset(widget.image,fit: BoxFit.contain,),
                 ),
               ),
             ),

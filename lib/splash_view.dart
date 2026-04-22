@@ -17,7 +17,7 @@ class _SplashState extends State<SplashView>
   void initState() {
     super.initState();
     Future.delayed(
-      const Duration(seconds: 2),
+      const Duration(seconds: 3),
       () {
         Navigator.pushReplacement(
           context,

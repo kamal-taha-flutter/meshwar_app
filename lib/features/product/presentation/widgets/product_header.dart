@@ -3,8 +3,8 @@ import 'package:hungryapp/core/shared/bag_button.dart';
 import 'package:hungryapp/core/shared/custom_text.dart';
 
 class ProductHeader extends StatelessWidget {
-  const ProductHeader({super.key});
-
+  const ProductHeader({super.key, required this.ontap});
+  final Function() ontap;
   @override
   Widget build(BuildContext context) {
     return  Padding(
@@ -13,10 +13,11 @@ class ProductHeader extends StatelessWidget {
                        children: [
 
                           GestureDetector(
-                            onTap: () => Navigator.pop(context),
+                            onTap:ontap,
                             child: CircleAvatar(
                               backgroundColor: Colors.white,
-                              child: Container(
+                              radius: 27,
+                              child: SizedBox(
                                 width: 40,
                                 height: 32,
                                 child: Stack(                          
@@ -28,7 +29,6 @@ class ProductHeader extends StatelessWidget {
                                       child: Icon(Icons.arrow_back_ios,size: 18,))],
                                 ),
                               ),
-                              radius: 27,
                             ),
                           ),
                             Spacer(),

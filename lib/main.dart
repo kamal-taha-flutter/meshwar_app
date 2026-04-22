@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hungryapp/features/auth/presentation/views/login_view.dart';
 import 'package:hungryapp/features/auth/presentation/views/signup_view.dart';
@@ -7,7 +8,9 @@ import 'package:hungryapp/features/product/presentation/views/product_details.da
 import 'package:hungryapp/root.dart';
 import 'package:hungryapp/splash_view.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const WearMeApp());
 }
 
