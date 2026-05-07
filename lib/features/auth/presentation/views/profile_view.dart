@@ -102,7 +102,7 @@ TextEditingController _Address =TextEditingController();
                   ),
           
                   Gap(30),
-                  CustomButton(text: 'Edit', color: AppColors.primary, textColor: Colors.white, width: double.infinity),
+                  CustomButton(text: 'Edit', color: AppColors.primary, textColor: Colors.white, width: double.infinity, isLoading: false,),
                 Gap(30)
             ],
           ),

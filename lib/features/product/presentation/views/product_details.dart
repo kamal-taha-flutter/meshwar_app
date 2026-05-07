@@ -99,7 +99,7 @@ final String text = 'The Nike Air Max 270 delivers visible Air under every step.
                     color: AppColors.primary,
                     textColor: Colors.white,
                     iconImage: 'assets/product/bagButton.png',
-                    width: 270,
+                    width: 270, isLoading: false,
                   ),
                 ],
                             ),

@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:hungryapp/core/services/service_locator.dart';
 import 'package:hungryapp/features/auth/presentation/views/login_view.dart';
 import 'package:hungryapp/features/auth/presentation/views/signup_view.dart';
 import 'package:hungryapp/features/home/views/home_view.dart';
@@ -9,6 +10,7 @@ import 'package:hungryapp/root.dart';
 import 'package:hungryapp/splash_view.dart';
 
 void main() async{
+  ServiceLocator().init();
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const WearMeApp());

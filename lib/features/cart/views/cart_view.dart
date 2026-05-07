@@ -272,7 +272,7 @@ final List<String> cards = [
                                 CustomButton(text: 'Back To Shopping',
                                  onTap: (){
                                   Navigator.pop(context);
-                                }, width: 210, color: AppColors.primary, textColor: Colors.white,)
+                                }, width: 210, color: AppColors.primary, textColor: Colors.white, isLoading: false,)
                               ],
                             ) ,
                           ),
@@ -280,7 +280,7 @@ final List<String> cards = [
                       
                      ); 
                     });
-                },)
+                }, isLoading: false,)
             ],
           ),
         ),
