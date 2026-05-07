@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:hungryapp/core/shared/custom_text.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, this.onTap, required this.text, required this.color, this.iconImage, required this.textColor, required this.width});
+  const CustomButton({super.key, this.onTap, required this.text, required this.color, this.iconImage, required this.textColor, required this.width, required this.isLoading});
 final Function()? onTap;
 final String text;
 final double width;
 final Color color;
 final Color textColor;
 final String? iconImage;
-
+final bool isLoading;
   @override
   Widget build(BuildContext context) {
     return  GestureDetector(
@@ -28,6 +28,8 @@ final String? iconImage;
                                     Image.asset(iconImage!, height: 24),
                                   const SizedBox(width: 8),
                                 ],
+                                isLoading?
+                                CupertinoActivityIndicator(color: Colors.white,):
                                 CustomText(
                                   text: text,
                                   color: textColor,
